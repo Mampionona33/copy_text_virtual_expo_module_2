@@ -45,7 +45,7 @@
     } else {
       if (formatList.length > 0) {
         chrome.storage.sync.set({ Es_text: formatList }, () =>
-          console.log(outPutText)
+          console.log(formatList)
         );
       }
       chrome.storage.sync.set({ Es_text: outPutText }, () =>
