@@ -39,10 +39,10 @@ chrome.commands.onCommand.addListener((command) => {
       });
     }
 
-    if (command === 'Copy_selected_text_to_ZH') {
+    if (command === 'inject_text') {
       chrome.scripting.executeScript({
         target: { tabId: tabId },
-        files: ['./script/getZhText.js'],
+        files: ['./script/injectText.js'],
       });
     }
   });
