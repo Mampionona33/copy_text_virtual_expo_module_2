@@ -19,6 +19,8 @@
   "background": {
     "service_worker": "background.js"
   },
+  
+  "host_permissions": ["http://www.directindustry.com/*"],
 
   "commands": {
     "Copy_selected_text_to_ES": {
@@ -39,8 +41,6 @@
       },
       "description": "copy selected text to JP variable"
     },
-
-    "host_permissions": ["http://www.directindustry.com/*"],
 
     "inject_text": {
       "suggested_key": {
